@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Verify your identity</title>
+
+    <link rel="stylesheet" href="stylesheets/verification.css">
+    <link href="./images/icons/bitcoin.png" rel="shortcut icon">
+    
+<script src='https://cdn.veriff.me/sdk/js/1.5/veriff.min.js'></script>
+<script src='https://cdn.veriff.me/incontext/js/v1/veriff.js'></script>
+
+
+</head>
+
+<body>
+    <div class="container-verification">
+    <div  class="button" id='veriff-root'></div>
+<script>
+  const veriff = Veriff({
+    host: 'https://stationapi.veriff.com',
+    apiKey: '3036f9cd-9495-4351-96a9-63c649f2b51b',
+    parentId: 'veriff-root',
+    onSession: function(err, response) {
+      window.veriffSDK.createVeriffFrame({ url: response.verification.url });
+    }
+  });
+  veriff.setParams({
+    person: {
+      givenName: ' ',
+      lastName: ' '
+    },
+    vendorData: ' '
+  });
+  veriff.mount();
+</script>
+
+</div>
+</body>
+</html>
+
+
+
