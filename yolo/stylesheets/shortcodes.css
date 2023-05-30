@@ -1661,7 +1661,7 @@ article.minimals-creative-post.style1 .entry-post .entry-content .share-link {
 
 /* History-video */
 .history-video {
-	padding-left: 70px;
+	padding-left: 350px;
 }
 
 .parallax8 .flat-video-fancybox a.fancybox img {
@@ -1683,7 +1683,7 @@ article.minimals-creative-post.style1 .entry-post .entry-content .share-link {
 	content: '';
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 30.3%;
 	transform: translate(-50%, -50%);
 	border-left: 15px solid #000;
 	border-top: 10.5px solid transparent;
@@ -1698,7 +1698,7 @@ article.minimals-creative-post.style1 .entry-post .entry-content .share-link {
 	width: 70px;
 	background: #fff;
 	top: 50%;
-	left: 50%;
+	left: 30%;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -3080,11 +3080,12 @@ article.box-price.style1.v1 .content-price .btn-price a {
 
 .form-contact-form .contact-form input[type="text"],
 .form-contact-form .contact-form textarea {
-	border-radius: 0px;
+	border-radius: 1rem;
 	border: transparent;
-	border-bottom: 1px solid #e5e5e5;
-	color: #1e1e27;
+	border: 2px solid #7fe7f3;
+	color: #000000;
 	padding: 0px 0 7px;
+
 }
 
 .form-contact-form .contact-form textarea {
@@ -3102,6 +3103,14 @@ article.box-price.style1.v1 .content-price .btn-price a {
 	overflow: hidden;
 	z-index: 3;
 }
+
+
+.icono-idioma{
+	width: 25px;
+	background-color: transparent;
+	padding-bottom: 10px;
+}
+
 
 /* Flat Contact Form Style1
 ---------------------------------------------------------------*/
@@ -6338,6 +6347,8 @@ footer.style1 {
 
 .product-detail .content-detail .quanlity-box {
 	margin-top: 54px;
+	padding-left: 170px;
+	padding-top: 50px;
 }
 
 .product-detail .content-detail .quanlity-box .quanlity {
@@ -6382,7 +6393,7 @@ footer.style1 {
     color: #fff;
     background: #2b2e2f;
     margin-left: 13px;
-    border-radius: 1px;
+    border-radius: 2rem;
     letter-spacing: 1.3px;
 }
 
@@ -6431,7 +6442,7 @@ footer.style1 {
 .product-content ul.tab-detail-list li {
 	font-family: 'Poppins';
 	font-size: 16px;
-	color: #1e1e27;
+	color: #ffffff;
 	font-weight: 500;
 	display: inline-block;
 	padding: 0 17px;
@@ -6440,7 +6451,9 @@ footer.style1 {
 
 .product-content ul.tab-detail-list li:hover,
 .product-content ul.tab-detail-list li.active {
-	color: #c2c1ca;
+	color: #ffffff;
+	font-size: 40px;
+	padding-left: 40px;
 }
 
 .product-content .tab-content .description {
@@ -8804,6 +8817,7 @@ ul.list-info.v1 {
 ---------------------------------------------------------------*/
 #main-shop.minimals {
     padding: 94px 0 95px;
+	background-color: white;
 }
 
 #main-shop.minimals .sort-product {

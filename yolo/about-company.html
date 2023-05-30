@@ -26,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
 
 	<!-- Favicon -->
-    <link href="./images/icons/bitcoin.png" rel="shortcut icon">
+    <link href="./images/icons/icono.png" rel="shortcut icon">
 
 </head>
 <body class="header_sticky ">
@@ -40,11 +40,11 @@
 		<section id="header" class="header">
 			<div class="container-fluid">
 				<div id="logo" class="logo float-left">
-					<a href="index.html" title="Yolo">
-						<img  class="logo" src="./images/logo/Logo.png" alt="">
+					<a href="index.html" title="Tokensur">
+						<img  class="logo" src="./images/logo/Logo3.png" alt="">
 					</a>
 				</div><!-- /.logo -->
-				<div class="menu-extra">
+				<!--<div class="menu-extra">
 					<div class="box-search">
 						<span class="icon_search"></span>
 						<form action="#" method="get" accept-charset="utf-8">
@@ -104,7 +104,7 @@
 					<div class="box-canvas">
 						<span class="ti-align-right"></span>						
 					</div>
-				</div><!-- /.icon-header -->
+				</div> /.icon-header -->
 				<ul class="flat-infomation">
 					
 				</ul><!-- /.flat-infomation -->
@@ -115,69 +115,83 @@
 					<div id="mainnav" class="mainnav">
 						<ul class="menu">
 							<li class="has-menu-mega">
-								<a href="index.html" title="">
+								<a id="contenido" href="index.html" title="">
 									Home
 								</a>
 								
 							</li><!-- /.has-menu-mega -->
 							<li class="active has-submenu">
-								<a href="#" title="">
+								<a id="pages" href="#" title="">
 									Pages
 								</a>
 								<div class="submenu">
 									<ul>
 										<li class="active">
-											<a href="about-company.html" title="">About Company</a>
+											<a id="aboutcompany" href="about-company.html" title="">About Company</a>
 										</li>
 										<li>
-											<a href="about-history.html" title="">About History</a>
+											<a id="platform" href="plataforma.html" title="">Plataforma</a>
 										</li>
 										<li>
-											<a href="about-me.html" title="">About Me</a>
+											<a id="aboutme" href="about-me.html" title="">About Me</a>
 										</li>
 					
 										<li>
-													<a href="comming-soon.html" target="_blank" title="">Comming Soon</a>
-												</li>
+											<a id="commingsoon" href="comming-soon.html" target="_blank" title="">Comming Soon</a>
+										</li>
 									</ul>
 								</div>
 							</li><!-- /.has-submenu -->
 							
 							
 							<li class="has-submenu">
-								<a href="#" title="">
+								<a id="investment" href="#" title="">
 									Investment Opportunities
 								</a>
 								<div class="submenu">
 									<ul>
 										<li>
-											<a href="shop.html" title="">Marketplace</a>
+											<a id="marketplace" href="shop-minimals.html" title="">Marketplace</a>
 										</li>
 									
-										<li>
+										<!-- <li>
 											<a href="sign-in.html" title="">Sign in</a>
 										</li>
 										<li>
 											<a href="register.html" title="">Register</a>
-										</li>
+										</li> -->
 									</ul>
 								</div>
 							</li><!-- /.has-menu-mega -->
-							<li class="has-menu-mega">
-								<a href="#" title="">
+							<li class="has-submenu">
+								<a id="elements" href="#" title="">
 									Elements
 								</a>
-								<div class="menu-mega overflow">
-									<ul class="menu-mega-child one-four">
+								<div class="submenu">
+									<ul >
 										<li>
-											<a href="page-title.html" title="">Page Titles</a>
+											<a id="teammembers" href="team-member.html" title="">Team Member</a>
 										</li>
-										<li>
-											<a href="team-member.html" title="">Team Member</a>
+										<li >
+											<a id="contactform" href="contact-form.html" title="">ContactForm</a>
 										</li>
-										
-									</ul><!-- /.menu-mega-child one-four -->
-									<ul class="menu-mega-child one-four">
+									</ul>	
+									</li>
+									<li class="has-submenu">
+									<ul class="">
+										<div class="dropdown">
+											<button onclick="toggleDropdown()" class="dropbtn">
+												<img class="icono-idioma" src="images/icons/idioma.png" alt="">
+											  <span class="arrow">&#9660;</span>
+											</button>
+											<div id="myDropdown" class="dropdown-content">
+												<a href="javascript:cambiarIdioma('español')">ES</a>
+												<a href="javascript:cambiarIdioma('ingles')">EN</a>
+											</div>
+										  </div>
+										</ul>
+									</li>
+									<!-- <ul class="menu-mega-child one-four">
 										<li>
 											<a href="contact-form.html" title="">ContactForm</a>
 										</li>
@@ -185,8 +199,8 @@
 											<a href="button-style.html" title="">Buttons</a>
 										</li>
 									
-									</ul><!-- /.menu-mega-child one-four -->
-									<ul class="menu-mega-child one-four">
+									</ul>/.menu-mega-child one-four -->
+									<!-- <ul class="menu-mega-child one-four">
 										<li>
 											<a href="call-to-actions.html" title="">Call to Actions</a>
 										</li>
@@ -197,8 +211,8 @@
 										<li>
 											<a href="google-map.html" title="">Google Map</a>
 										</li>
-									</ul><!-- /.menu-mega-child one-four -->
-									<ul class="menu-mega-child one-four">
+									</ul>/.menu-mega-child one-four -->
+									<!-- <ul class="menu-mega-child one-four">
 										
 										<li>
 											<a href="info-box.html" title="">Info Box</a>
@@ -208,7 +222,7 @@
 											<a href="socials.html" title="">Socials</a>
 										</li>
 									
-									</ul><!-- /.menu-mega-child one-four -->
+									</ul>/.menu-mega-child one-four -->
 								</div><!-- /.submenu menu-mega -->
 							</li><!-- /.has-menu-mega -->
 						</ul><!-- /.menu -->
@@ -276,14 +290,14 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="box-title style1">
-								<h1>
+								<h1 id="h1aboutus">
 									About Us
 								</h1>
 								<div class="breadcrumbs">
 									<ul>
-										<li><a href="index.html" title="">Home</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-										<li><a href="about-company.html" title="">Pages</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-										<li><a href="#" title="">About Us</a></li>
+										<li><a id="contenido" href="index.html" title="">Home</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+										<li><a id="pages" href="about-company.html" title="">Pages</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+										<li><a id="h1aboutus" href="#" title="">About Us</a></li>
 									</ul>
 								</div><!-- /.breadcrumbs -->
 							</div><!-- /.box-title -->
@@ -306,23 +320,27 @@
 						</div><!-- /.flat-title -->
 						<div class="tab-about">
 							<ul class="tab-list-about">
-								<li class="active">Why We're Unique</li>
-								<li>Our Misson</li>
-								<li>Value Proposition</li>
-								<li>Our Difference</li>
+								<li id="unique" class="active">Why we are unique</li>
+								<li id="mision">Our mission</li>
+								<li id="valores">Value Proposal</li>
+								<li id="diferencia">Our difference</li>
 							</ul><!-- /.tab-list-about -->
 							<div class="content-tab">
 								<div class="content-inner">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+									<p>En Tokensur nos dedicamos a brindar soluciones para empresas que buscan financiación y para pequeños inversores que desean invertir en estas sin disponer de un gran capital. </p>
+									<p>Para ello, a través de nuestra plataforma de tokenización, le brindamos a nuestros clientes la posibilidad convertir activos físicos o activos productivos reales en activos digitales y fragmentarlos de tal manera que puedan ser adquiridos por pequeños inversores de forma online. Esto, utilizando tecnología blockchain y la seguridad que brindan los smart contracts</p>
 								</div><!-- /.content-inner -->
 								<div class="content-inner">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+									<p>Brindamos las herramientas necesarias a empresas que buscan financiamientos mediante la tokenización digital de activos, colaborando asi con la democratización de la inversin para pequeños inversores.</p>
 								</div><!-- /.content-inner -->
 								<div class="content-inner">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-									<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+									<p>-Responsabilidad social y atención por el medioambiente</p>
+									<p>-Integridad y respeto en todas nuestras acciones comerciales</p>
+									<p>-Proveer de una alta calidad de vida para las personas operando negocios bajo los valores de sustentabilidad.</p>
+									<p>-Trabajo en equipo</p>
+									<p>-Busqueda de innovación constante para la creación de valor.</p>
+									<p>-Colaborar con las comunidades proveyendo de información y acceso a las nuevas tecnologías y a la transformación digital.</p>
+
 								</div><!-- /.content-inner -->
 								<div class="content-inner">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -473,102 +491,7 @@
 			</div><!-- /.container -->
 		</section><!-- /.flat-team -->
 
-		<section class="flat-testimonial">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="testimonial owl-carousel-1 style4">
-							<div class="testimonial-item style5">
-								<blockquote>
-									<span>“</span>
-									<p>I wanted to mention that these days, when the opposite of good customer and tech support tends to be the norm, it's always great having a team like you guys at Yolo! So, be sure that I'll always spread the word about how good your product is and the extraordinary level of support that you provide any time there is any need for it.</p>
-									<div class="info-author">
-										<div class="name">
-											Nancy Franklin
-										</div>
-										<div class="option">
-											UI/UX  Designer
-										</div>
-									</div>
-								</blockquote><!-- /blockquote -->
-							</div><!-- /.testimonial-item -->
-							<div class="testimonial-item style5">
-								<blockquote>
-									<span>“</span>
-									<p>I wanted to mention that these days, when the opposite of good customer and tech support tends to be the norm, it's always great having a team like you guys at Yolo! So, be sure that I'll always spread the word about how good your product is and the extraordinary level of support that you provide any time there is any need for it.</p>
-									<div class="info-author">
-										<div class="name">
-											Jackson Nash
-										</div>
-										<div class="option">
-											Marketing Director
-										</div>
-									</div>
-								</blockquote><!-- /blockquote -->
-							</div><!-- /.testimonial-item -->
-							<div class="testimonial-item style5">
-								<blockquote>
-									<span>“</span>
-									<p>I wanted to mention that these days, when the opposite of good customer and tech support tends to be the norm, it's always great having a team like you guys at Yolo! So, be sure that I'll always spread the word about how good your product is and the extraordinary level of support that you provide any time there is any need for it.</p>
-									<div class="info-author">
-										<div class="name">
-											Phil John
-										</div>
-										<div class="option">
-											Founder & CEO
-										</div>
-									</div>
-								</blockquote><!-- /blockquote -->
-							</div><!-- /.testimonial-item -->
-						</div><!-- /.testimonial owl-carousel-1 -->
-						<div class="wrap-counter">
-							<div class="row">
-								<div class="col-lg-3 col-sm-6">
-									<div class="square">
-										<div class="numb-count" data-from="0" data-to="90" data-speed="2000" data-waypoint-active="yes">
-											90
-										</div>
-										<div class="text">
-											Projects <br/>Completed
-										</div>
-									</div><!-- /.square -->
-								</div><!-- /.col-lg-3 col-sm-6 -->
-								<div class="col-lg-3 col-sm-6">
-									<div class="square">
-										<div class="numb-count" data-from="0" data-to="120" data-speed="2000" data-waypoint-active="yes">
-											120
-										</div>
-										<div class="text">
-											Happy <br/>clients
-										</div>
-									</div><!-- /.square -->
-								</div><!-- /.col-lg-3 col-sm-6 -->
-								<div class="col-lg-3 col-sm-6">
-									<div class="square">
-										<div class="numb-count" data-from="0" data-to="50" data-speed="2000" data-waypoint-active="yes">
-											50
-										</div>
-										<div class="text">
-											WEB <br/>awards
-										</div>
-									</div><!-- /.square -->
-								</div><!-- /.col-lg-3 col-sm-6 -->
-								<div class="col-lg-3 col-sm-6">
-									<div class="square">
-										<div class="numb-count" data-from="0" data-to="240" data-speed="2000" data-waypoint-active="yes">
-											240
-										</div>
-										<div class="text">
-											coffee <br/>music
-										</div>
-									</div><!-- /.square -->
-								</div><!-- /.col-lg-3 col-sm-6 -->
-							</div><!-- /.row -->
-						</div><!-- /.counter -->
-					</div><!-- /.col-md-12 -->
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</section><!-- /.flat-testimonial -->
+		
 
 		<section class="flat-partner background">
 			<div class="container">
@@ -758,7 +681,7 @@
 		<script type="text/javascript" src="javascript/jquery-countTo.js"></script>
 		<script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
 		<script type="text/javascript" src="javascript/owl.carousel.js"></script>
-		 
+		 <script src="javascript/script.js"></script>
 		<script type="text/javascript" src="javascript/parallax.js"></script>
 	   	<script type="text/javascript" src="javascript/jquery.final-countdown.js"></script>
 		<script type="text/javascript" src="javascript/jquery.cookie.js"></script>

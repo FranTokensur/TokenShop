@@ -189,8 +189,6 @@
 
 
 
-
-
         var menuCanvas = function() {
             var buttonCavas = $('.box-canvas span.ti-align-right');
             var closeCanvas = $('.menu-canvas .close');

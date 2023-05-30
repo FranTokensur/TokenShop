@@ -137,9 +137,57 @@ input[type="reset"],
 input[type="submit"] {
 	line-height: 1;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	-webkit-appareance: button; /* Corrects inability to style clickable 'input' types in iOS */
 	border: none;
 }
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropbtn {
+	background-color: #77e5f1;
+	color: #000000;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 400;
+	border: none;
+	cursor: pointer;
+	border-radius: 1rem;
+	width: 100px;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #000000;
+	min-width: 80px;
+	border-radius: 10px;
+	border: 1px solid rgb(46, 227, 255);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: #6ed9ee;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #8ff2f6;
+	border-radius: 10px;
+  }
+  
+  .show {
+	display: block;
+  }
+  
+  .arrow {
+	margin-left: 5px;
+  }
+  
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -147,11 +195,11 @@ input[type="radio"] {
 }
 
 input[type="search"] {
-	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+	-webkit-appareance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
 }
 
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
-	-webkit-appearance: none;
+	-webkit-appareance: none;
 }
 
 button::-moz-focus-inner,
@@ -230,12 +278,31 @@ ul li, ol li {
 }
 
 .logo {
-	max-width: 100%;
+	width: 200px;
 	height: auto;
 	background-color:  transparent;
 }
+
+.image-single{
+	width: 550px;
+	height: 450px;
+	background-color: white;
+}
+
+.shop-images{
+	width: 280px;
+	height: 220px;
+	background-color: rgb(255, 255, 255);
+}
+
+.texto-shop{
+	background-color: #fafafa;
+	border-radius: 2px;
+	color: rgb(78, 141, 162);
+}
+
 img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;  
 	background-color: rgb(38, 38, 38);     
 }
@@ -596,6 +663,21 @@ h6 { font-size: 18px;line-height: 18px;}
 	padding-top: 0px;
 }
 
+.propuesta-ideal-li {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.texto-tokenizacion{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
 .color-default {color: #1490d7;}
 .color-white {color: #fff;}
 .color-black {color: #1e1e27;}
@@ -943,7 +1025,7 @@ ul.unstyled li a {
 	cursor: pointer;
 	color: #1e1e27;
 	padding-right: 20px;
-	border-right: 1px solid #ebeaee;
+	border-right: 1px solid #cac7d4;
 }
 
 /* Header
@@ -958,7 +1040,7 @@ ul.unstyled li a {
 	position: absolute;
 	width: 100%;
 	left: 0;
-	background-color: rgb(19, 18, 18);
+	background-color: rgb(0, 0, 0);
 	z-index: 5;
 	color: white;
 	border-bottom: 1px solid rgb(161, 255, 253);
@@ -1179,6 +1261,11 @@ ul.flat-infomation,
 
 .menu-extra.style1 > div.box-search form {
 	height: 50px;
+}
+
+.h2-subtitulo {
+	color: white;
+	font-size: 30px;
 }
 
 /* Box Cart */
@@ -2607,7 +2694,7 @@ ul.child .comment.style1 .comment-content .comment-text p {
 /* Footer
 -------------------------------------------------------------- */
 footer {
-	background: #1e1e27;
+	background: transparent;
 	padding: 62px 0 74px;
 }
 

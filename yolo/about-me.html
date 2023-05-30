@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
 
 	<!-- Favicon -->
-    <link href="./images/icons/bitcoin.png" rel="shortcut icon">
+    <link href="./images/icons/icono.png" rel="shortcut icon">
 
 </head>
 <body class="header_sticky ">
@@ -43,11 +43,11 @@
 		<section id="header" class="header">
 			<div class="container-fluid">
 				<div id="logo" class="logo float-left">
-					<a href="index.html" title="Yolo">
-						<img class="logo" src="./images/logo/Logo.png" alt="">
+					<a href="index.html" title="Tokensur">
+						<img class="logo" src="./images/logo/Logo3.png" alt="">
 					</a>
 				</div><!-- /.logo -->
-				<div class="menu-extra">
+				<!--<div class="menu-extra">
 					<div class="box-search">
 						<span class="icon_search"></span>
 						<form action="#" method="get" accept-charset="utf-8">
@@ -56,7 +56,7 @@
 								<span class="ti-close delete"></span>
 							</div>
 						</form>
-					</div><!-- /.box-search -->
+					</div> /.box-search 
 					<div class="box-cart">
 						<span class="icon_bag_alt"></span>
 						<div class="subcart">
@@ -103,11 +103,11 @@
 								<a href="#" class="check-out" title="">CHECK OUT</a>
 							</div>
 						</div>
-					</div><!-- /.box-cart -->
+					</div> /.box-cart
 					<div class="box-canvas">
 						<span class="ti-align-right"></span>
-					</div><!-- /.box-canvas -->
-				</div><!-- /.icon-header -->
+					</div>/.box-canvas 
+				</div> /.icon-header -->
 				<ul class="flat-infomation">
 					
 				</ul><!-- /.flat-infomation -->
@@ -133,7 +133,7 @@
 											<a href="about-company.html" title="">About Company</a>
 										</li>
 										<li>
-											<a href="about-history.html" title="">About History</a>
+											<a href="plataforma.html" title="">Plataforma</a>
 										</li>
 										<li class="active">
 											<a href="about-me.html" title="">About Me</a>
@@ -153,33 +153,47 @@
 								<div class="submenu">
 									<ul>
 										<li>
-											<a href="shop.html" title="">Marketplace</a>
+											<a href="shop-minimals.html" title="">Marketplace</a>
 										</li>
 										
-										<li>
+										<!-- <li>
 											<a href="sign-in.html" title="">Sign in</a>
 										</li>
 										<li>
 											<a href="register.html" title="">Register</a>
-										</li>
+										</li> -->
 									</ul>
 								</div>
 							</li><!-- /.has-menu-mega -->
-							<li class="has-menu-mega">
-								<a href="#" title="">
+							<li class="has-submenu">
+								<a id="elements" href="#" title="">
 									Elements
 								</a>
-								<div class="menu-mega overflow">
-									<ul class="menu-mega-child one-four">
+								<div class="submenu">
+									<ul >
 										<li>
-											<a href="page-title.html" title="">Page Titles</a>
+											<a id="teammembers" href="team-member.html" title="">Team Member</a>
 										</li>
-										<li>
-											<a href="team-member.html" title="">Team Member</a>
+										<li >
+											<a id="contactform" href="contact-form.html" title="">ContactForm</a>
 										</li>
-										
-									</ul><!-- /.menu-mega-child one-four -->
-									<ul class="menu-mega-child one-four">
+									</ul>	
+									</li>
+									<li class="has-submenu">
+									<ul class="">
+										<div class="dropdown">
+											<button onclick="toggleDropdown()" class="dropbtn">
+												<img class="icono-idioma" src="images/icons/idioma.png" alt="">
+											  <span class="arrow">&#9660;</span>
+											</button>
+											<div id="myDropdown" class="dropdown-content">
+												<a href="javascript:cambiarIdioma('español')">ES</a>
+												<a href="javascript:cambiarIdioma('ingles')">EN</a>
+											</div>
+										  </div>
+										</ul>
+									</li>
+									<!-- <ul class="menu-mega-child one-four">
 										<li>
 											<a href="contact-form.html" title="">ContactForm</a>
 										</li>
@@ -187,8 +201,8 @@
 											<a href="button-style.html" title="">Buttons</a>
 										</li>
 										
-									</ul><!-- /.menu-mega-child one-four -->
-									<ul class="menu-mega-child one-four">
+									</ul>/.menu-mega-child one-four -->
+									<!-- <ul class="menu-mega-child one-four">
 										<li>
 											<a href="call-to-actions.html" title="">Call to Actions</a>
 										</li>
@@ -199,8 +213,8 @@
 										<li>
 											<a href="google-map.html" title="">Google Map</a>
 										</li>
-									</ul><!-- /.menu-mega-child one-four -->
-									<ul class="menu-mega-child one-four">
+									</ul>/.menu-mega-child one-four -->
+									<!-- <ul class="menu-mega-child one-four">
 										
 										<li>
 											<a href="info-box.html" title="">Info Box</a>
@@ -210,7 +224,7 @@
 											<a href="socials.html" title="">Socials</a>
 										</li>
 										
-									</ul><!-- /.menu-mega-child one-four -->
+									</ul>/.menu-mega-child one-four -->
 								</div><!-- /.submenu menu-mega -->
 							</li><!-- /.has-menu-mega -->
 						</ul><!-- /.menu -->
@@ -658,7 +672,7 @@
 		<script type="text/javascript" src="javascript/parallax.js"></script>
 	   	<script type="text/javascript" src="javascript/jquery.final-countdown.js"></script>
 		<script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-		
+		<script src="javascript/script.js"></script>
 
 		<script type="text/javascript" src="javascript/main.js"></script>
 
