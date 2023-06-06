@@ -1510,8 +1510,8 @@
                         });
                     }
                 });
-            }); // each contactform
-        };   // ajax ContactForm
+            }); 
+        };   
 
         var swClick = function () {
             function activeLayout () {

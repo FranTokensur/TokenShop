@@ -38,7 +38,13 @@ function toggleDropdown() {
       elements:"Elementos",
       teammembers:"Miembros del equipo",
       contactform:"Formulario de contacto",
+      tituloservicios:"Nuestros servicios",
       activos:"Tokenización de activos",
+      spanassets:"Tokenizamos tu empresa a través de nuestra plataforma para que puedas levantar capital, financiación y liquidez",
+      your:"Tu propia plataforma",
+      spanyour:"",
+      buysell:"Comprar y vender tokens",
+      spanbuysell:"",
       propuestaideal:"Propuesta ideal:",
       textotokenizacion:".Tokenizamos tu empresa a traves de nuestra plataforma haciendo que puedas captar capital, financiación y liquidez",
       propuestaideal1:".Empresas en ronda de financiación",
@@ -69,6 +75,11 @@ function toggleDropdown() {
       teammembers:"Team members",
       contactform:"Contact Form",
       activos:"Asset tokenization",
+      spanassets:"We tokenize your company through our platform so that you can raise capital, financing and liquidity",
+      your:"Your own platform",
+      spanyour:"",
+      buysell:"Buy and sell tokens",
+      spanbuysell:"",
       propuestaideal:"Ideal proposal:",
       textotokenizacion:"We tokenize your company through our platform so that you can raise capital, financing and liquidity.",
       propuestaideal1:".Companies in financing round",
@@ -102,6 +113,11 @@ function toggleDropdown() {
     document.getElementById("teammembers").textContent = texto.teammembers
     document.getElementById("contactform").textContent = texto.contactform
     document.getElementById("activos").textContent = texto.activos
+    document.getElementById("").textContent = texto.
+    document.getElementById("your").textContent = texto.your
+    document.getElementById("").textContent = texto.
+    document.getElementById("buysell").textContent = texto.buysell
+    document.getElementById("").textContent = texto.
     document.getElementById("propuestaideal").textContent = texto.propuestaideal
     document.getElementById("textotokenizacion").textContent = texto.textotokenizacion
     document.getElementById("propuestaideal1").textContent = texto.propuestaideal1

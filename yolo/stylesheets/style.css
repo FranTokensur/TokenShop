@@ -1927,7 +1927,7 @@ ul.flat-infomation.style1 li.phone a {
 	font-size: 60px;
 	font-weight: 600;
 	line-height: 48px;
-	color: #1e1e27;
+	color: #a9fbff;
 	margin-bottom: 28px;
 	margin-top: 4px;
 	padding-left: 5px;
@@ -1939,7 +1939,7 @@ ul.flat-infomation.style1 li.phone a {
 }
 
 .breadcrumbs ul li a:not(:hover) {
-	color: #5a596a;
+	color: #d6d3ff;
 }
 
 .breadcrumbs ul li a {
@@ -1954,7 +1954,7 @@ ul.flat-infomation.style1 li.phone a {
 .box-title.style1,
 .page-title .title-heading .box-title.style1 h1,
 .box-title.style1 .breadcrumbs ul li a:not(:hover) {
-	color: #73d4f1;
+	color: #ffffff;
 }
 
 /* Box Title Style2 */
@@ -3074,9 +3074,10 @@ footer.style3 .footer-bottom .widget-about-ft .widget-content p {
 	line-height: 26px;
 }
 
-footer.style3 .footer-bottom .social-ft.style1 {
+/* footer.style3 .footer-bottom .social-ft.style1 {
 
-}
+} */
+
 
 /* Social footer Style1 */
 .social-ft.style1 {
@@ -3639,6 +3640,57 @@ footer.style8 {
 #subscribe-msg {
 	color: #1490d7;
 }
+
+
+/* Contact-Form */
+
+.form {
+	max-inline-size: 550px;
+	margin: auto;
+  }
+  
+  .form label {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: .5em;
+	padding-inline-start: .5em;
+  }
+  
+  .form label span {
+	color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 1rem;
+	padding: .8em;
+	border-radius: .5em;
+	border: 1px solid #858C94;
+  }
+  .form textarea {
+	margin-block-end: 2em;
+	font-family: inherit;
+  }
+  
+  input::-webkit-input-placeholder {
+	color: #0F0A0A88;
+  }
+  
+  .contact {
+	margin-block-end: 5em;
+  }
+  #trucazo {
+	opacity: 0;
+  }
+  @media screen and (min-width: 768px) {
+	.form .tag span {
+		display: block;
+		text-align: center;
+	  }
+	
+	}
+		
 
 /* Preload
 -------------------------------------------------------------- */

@@ -1,0 +1,23 @@
+.container-raised {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.115);
+    padding-left: 10px;
+}
+  h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 32px;
+  }
+  
+  #counter {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding-top: 15px;
+  }
+
+  .counterp {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.993);
+    padding-bottom: 10px;
+  }

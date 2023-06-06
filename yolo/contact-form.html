@@ -16,6 +16,9 @@
 	<!-- Boostrap style -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
 
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	
 	<!-- Fancy box -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/fancybox.css">
 
@@ -30,6 +33,8 @@
 
 	<!-- Favicon -->
     <link href="./images/icons/icono.png" rel="shortcut icon">
+	
+
 
 </head>
 <body class="header_sticky ">
@@ -67,40 +72,37 @@
 					<div id="mainnav" class="mainnav">
 						<ul class="menu">
 							<li class="has-menu-mega">
-								<a href="index.html" title="">
+								<a id="contenido" href="index.html" title="">
 									Home
 								</a>
 								
 							<li class=" has-submenu">
-								<a href="#" title="">
+								<a id="pages" href="#" title="">
 									Pages
 								</a>
 								<div class="submenu">
 									<ul>
 										<li>
-											<a href="about-company.html" title="">About Company</a>
+											<a id="aboutcompany" href="about-company.html" title="">About Company</a>
 										</li>
 										<li>
-											<a href="plataforma.html" title="">Plataforma</a>
+											<a id="platform" href="plataforma.html" title="">Plataforma</a>
 										</li>
 										<li>
-											<a href="about-me.html" title="">About Me</a>
-										</li>
-										<li>
-											<a href="comming-soon.html" target="_blank" title="">Comming Soon</a>
+											<a id="commingsoon" href="comming-soon.html" target="_blank" title="">Comming Soon</a>
 										</li>
 									</ul>
 								</div>
 							</li><!-- /.has-submenu -->
 							
 							<li class="has-submenu">
-								<a href="#" title="">
+								<a id="marketplace" href="#" title="">
 									Marketplace
 								</a>
 								<div class="submenu">
 									<ul>
 										<li>
-											<a href="shop-minimals.html" title="">Marketplace</a>
+											<a id="marketplace" href="shop-minimals.html" title="">Marketplace</a>
 										</li>
 									</ul>
 								</div>
@@ -198,10 +200,6 @@
 				<div class="close">
 					<i class="fa fa-times" aria-hidden="true"></i>
 				</div>
-				<div class="widget-about">
-					<h5>We Are yolo</h5>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.</p>
-				</div>
 				<div class="widget-contact">
 					<h5>Contact Us</h5>
 					<ul>
@@ -248,7 +246,7 @@
 			</div>
 		</section><!-- /.header -->
 
-		<section class="page-title parallax parallax2">
+		<section class="page-title parallax parallax1">
 			<div class="title-heading">
 				<div class="container">
 					<div class="row">
@@ -272,176 +270,125 @@
 		<div class="overlay-black"></div>
 		</section><!-- /.page-title parallax -->
 
-		<section class="flat-contact-form">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-contact-form padding-contact">
-							<form id="contactform" action="./contact/contact-process.php" method="post" accept-charset="utf-8">
-								<div class="contact-form-name contact-form">
-									<input type="text" name="name" id="name" placeholder="Name |" required=""/>
-								</div>
-								<div class="contact-form-email contact-form">
-									<input type="text" name="email" id="email" placeholder="Email" required=""/>
-								</div>
-								<div class="contact-form-url contact-form">
-									<input type="text" name="url" id="url" placeholder="Website" required=""/>
-								</div>
-								<div class="contact-form-comment contact-form">
-									<textarea name="message" id="message" placeholder="Messages" required=""></textarea>
-								</div>
-								<div class="btn-contact-form center">
-									<button type="submit" class="flat-button-form">SEND MESSAGES</button>
-								</div>
-							</form><!-- /form -->
-						</div><!-- /.form-contact-form -->
-					</div><!-- /.col-md-12 -->
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</section><!-- /.flat-contact-form -->
+		<section class="contact">
+			<div class="u-wrapper">
+			  <div class="contact-content">
+		
+				<form id="form" action="" class="form">
+				  <h3 class="tag"><span>HABLEMOS</span></h3>
+				  <label for="name">Nombre Completo <span>*</span></label>
+				  <input name="name"  required type="text" id="name" placeholder="Nombre...">
+				  <label for="email">Correo electrónico <span>*</span></label>
+				  <input name="email" type="text" id="email" required placeholder="@Email">
+				  <label for="message">Mensaje</label>
+				  <textarea id="message" placeholder="Dejenos un mensaje..." name="message" id="" cols="30" rows="10"></textarea>
+				  <!-- <button type="submit" class="btn primary full">enviar mensaje</button> -->
+				  <div class="btn-contact-form center">
+					<button type="submit" class="flat-button-form">SEND MESSAGES</button>
+				</div>
+				</form>
+				<a href="mailto:franbalcarce21@gmail.com" id="trucazo"></a>
+			  </div>
+			</div>
+		  </section>
+		  
+		  <script>
+			const $form = document.querySelector('#form')
+			const $buttonMailto = document.querySelector('#trucazo')
+		
+			$form.addEventListener('submit', handleSubmit)
+		
+			function handleSubmit(event) {
+			  event.preventDefault()
+			  const form = new FormData(this)
+			  $buttonMailto.setAttribute('href', `mailto:franbalcarce21@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+			  $buttonMailto.click()
+			}
+		  </script>
+		
 
 		
 
-		<footer>
+		<footer class="style2 bg-white">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
-						<div class="widget-ft widget-contact">
-							<h3 class="title">CONTACT US</h3>
-							<ul class="flat-contact">
-								<li class="contact">
-									<p class="phone">1 (800) 686-6688</p>
-									<p class="email">info.deercreative@gmail.com</p>
+					<div class="col-md-4">
+						<div class="widget-about">
+							<div class="logo-ft">
+								<a href="index.html" title="">Tokensur</a>
+							</div>
+							<ul class="social-ft">
+								<li>
+									<a href="https://wa.me/+54 911 37996412" target="_blank">
+										<i class="fa-brands fa-whatsapp"></i>
+									</a>
 								</li>
-								<li class="address">
-									<p>40 Baria Sreet 133/2 <br/>NewYork City, US</p>
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=100090417305686" title="Facebook" target="_blank">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
 								</li>
-								<li class="open-hours">
-									<p>Open hours: 8.00-18.00 Mon-Fri</p>
+								<li>
+									<a href="https://www.linkedin.com/company/tokensur/" title="LinkedId" target="_blank"> 
+										<i class="fa-brands fa-linkedin-in"></i>
+									</a>
 								</li>
+								<li>
+									<a href="https://www.instagram.com/tokensur/" title="Instagram" target="_blank">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul><!-- /.social-ft -->
+						</div><!-- /.widget-about -->
+					</div><!-- /.col-md-4 -->
+					<div class="col-md-4">
+						<div class="widget-menu-ft">
+							<ul class="one-half">
+								<li>
+									<a href="index.html" target="_blank">Home</a>
+								</li>
+								<li>
+									<a href="about-company.html" target="_blank">About company</a>
+								</li>
+								<li>
+									<a href="plataforma.html" target="_blank">Platform</a>
+								</li>	
+								<li>
+									<a href="comming-soon.html" target="_blank">Comming soon</a>
+								</li>
+							</ul><!-- /.one-half -->
+							<ul class="one-half">
+								<li>
+									<a href="shop-minimals.html" target="_blank">Marketplace</a>
+								</li>
+								<li>
+									<a href="team-member.html" target="_blank">Team members</a>
+								</li>
+								<li>
+									<a href="contact-form.html" target="_blank">Contact form</a>
+								</li>
+								
+							</ul><!-- /.one-half -->
+						</div><!-- /.widget-menu-ft -->
+					</div><!-- /.col-md-4 -->
+					<div class="col-md-4">
+						<div class="widget-information">
+							<ul>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2148.783205169923!2d-58.86558111568095!3d-34.4512325167125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9de07203e295%3A0x225030d7c6aa960a!2sParque%20Empresarial%20Austral!5e0!3m2!1ses!2sar!4v1686059170460!5m2!1ses!2sar" width="350" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</ul>
-						</div><!-- /.widget-ft widget-contact -->
-					</div><!-- /.col-md-3 -->
-					<div class="col-md-3">
-						<div class="widget-ft widget-link-cat">
-							<h3 class="title">LINK CATEGORIES</h3>
-							<ul class="one-half">
-								<li>
-									<a href="#" title="">Agency</a>
-								</li>
-								<li>
-									<a href="#" title="">Studio</a>
-								</li>
-								<li>
-									<a href="#" title="">Studio</a>
-								</li>
-								<li>
-									<a href="#" title="">Blogs</a>
-								</li>
-								<li>
-									<a href="#" title="">Shop</a>
-								</li>								
-							</ul><!-- /.one-half -->
-							<ul class="one-half">
-								<li>
-									<a href="#" title="">Home</a>
-								</li>
-								<li>
-									<a href="#" title="">About</a>
-								</li>
-								<li>
-									<a href="#" title="">Services</a>
-								</li>
-								<li>
-									<a href="#" title="">Work</a>
-								</li>
-								<li>
-									<a href="#" title="">Privacy </a>
-								</li>								
-							</ul><!-- /.one-half -->
-						</div><!-- /.widget-ft widget-link-cat -->
-					</div><!-- /.col-md-3 -->
-					<div class="col-md-3">
-						<div class="widget-ft widget-lastest-news">
-							<h3 class="title">LATEST NEWS</h3>
-							<ul class="flat-lastest-news">
-								<li>
-									<a href="#" title="">Device Frienly</a>
-									<p>
-										<span>December 22, 2017</span>
-										<span><i class="fa fa-comments-o" aria-hidden="true"></i>10</span>
-									</p>
-								</li>
-								<li>
-									<a href="#" title="">Simple, Fast and Fun</a>
-									<p>
-										<span>December 22, 2017</span>
-										<span><i class="fa fa-comments-o" aria-hidden="true"></i>10</span>
-									</p>
-								</li>
-								<li>
-									<a href="#" title="">We creative Experiences</a>
-									<p>
-										<span>December 22, 2017</span>
-										<span><i class="fa fa-comments-o" aria-hidden="true"></i>10</span>
-									</p>
-								</li>
-							</ul><!-- /.flat-lastest-news -->
-						</div><!-- /.widget-ft widget-contact -->
-					</div><!-- /.col-md-3 -->
-					<div class="col-md-3">
-						<div class="widget-ft widget-twitter-feed">
-							<h3 class="title">TWITTER FEED</h3>
-							<p><i class="fa fa-twitter" aria-hidden="true"></i> Check out 'Yolo - Creative Multi-Pur-pose WordPress Theme' on #Envato-Market by @Leonard_Design</p>
-							<p>#https://themeforest.net/user/leon-ard_design/portfolio</p>
-							<span>About 9 months ago</span>
-						</div>
-					</div><!-- /.col-md-3 -->
+						</div><!-- /.widget-information -->
+					</div><!-- /.col-md-4 -->
+					<!-- <div class="info-contacto">
+							<ul>
+								<li>+54 911 37996412</li>
+								<li>hello@tokensur.com</li>
+								<li>Parque Austral, Pilar</li>
+							</ul>
+				    </div> -->
 				</div><!-- /.row -->
 			</div><!-- /.container -->
-		</footer><!-- /.footer -->
-
-		<section class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<ul class="social-ft">
-							<li>
-								<a href="" title="Facebook">
-									<i class="fa fa-facebook" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="" title="Twitter">
-									<i class="fa fa-twitter" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="" title="Google Plus">
-									<i class="fa fa-google-plus" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="" title="Instagram">
-									<i class="fa fa-instagram" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="" title="Pinterest">
-									<i class="fa fa-pinterest" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="" title="Tripadvisor">
-									<i class="fa fa-tripadvisor" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-						<p class="copyright">Copyright ©2017 <a href="#" title="">DeerCreative</a>. All Rights Reserved</p>
-					</div>
-				</div>
-			</div><!-- /.container -->
-		</section><!-- /.footer-bottom -->
+		</footer><!-- /.footer style2 -->
+		
 
 		<div class="button-go-top">
 			<a href="#" title="" class="go-top">
@@ -449,9 +396,8 @@
 			</a><!-- /.go-top -->
 		</div><!-- /.button-go-top -->
 
-	</div><!-- /.boxed -->
-
 		<!-- Javascript -->
+		<script src="javascript/contactsTraduction.js"></script>
 		<script type="text/javascript" src="javascript/jquery.min.js"></script>
 		<script type="text/javascript" src="javascript/tether.min.js"></script>
 		<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
@@ -461,7 +407,7 @@
 		<script type="text/javascript" src="javascript/easing.js"></script>
 		<script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
 		<script type="text/javascript" src="javascript/owl.carousel.js"></script>
-		<script src="javascript/script.js"></script>
+		
 		 
 		<script type="text/javascript" src="javascript/parallax.js"></script>
 		

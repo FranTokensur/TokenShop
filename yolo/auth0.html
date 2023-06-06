@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SPA SDK Sample</title>
+    <link rel="stylesheet" type="text/css" href="Public/css/main.css" />
+    
+  </head>
+
+  <body>
+    <h2 class="title">Verification</h2>
+    <p class="p">Welcome to our page!</p>
+    <div class="buttons">
+    <button class="btn-login" id="btn-login"  onclick="login()">Log in</button>
+    <button class="btn-logout" id="btn-logout"  onclick="logout()">Log out</button>
+    </div>
+    <div class="hidden" id="gated-content">
+        <p>
+          You're seeing this content because you're currently
+          <strong>logged in</strong>.
+        </p>
+        <label>
+          Access token:
+          <pre id="ipt-access-token"></pre>
+        </label>
+        <label>
+          User profile:
+          <pre id="ipt-user-profile"></pre>
+        </label>
+      </div>
+      <!-- <button id="btn-call-api" disabled="true" onclick="callApi()">Call Api</button> -->
+
+<!-- Add a container to hold the response from the call -->
+<pre id="api-call-result"></pre>
+
+      <script src="Public/js/app.js"></script>
+      <script src="Public/js/ui.js"></script>
+      <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+      <script src="server.js"></script>
+  </body>
+</html>

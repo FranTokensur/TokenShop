@@ -16,6 +16,9 @@
 	<!-- Boostrap style -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
 
+    <!-- Font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	
 	<!-- REVOLUTION LAYERS STYLES -->
     <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
     <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
@@ -31,6 +34,8 @@
 
 	<!-- Favicon -->
     <link href="./images/icons/icono.png" rel="shortcut icon">
+	
+	
 
 </head>
 <body class="header_sticky ">
@@ -81,10 +86,6 @@
 										<li>
 											<a id="platform" href="plataforma.html" title="">Platform</a>
 										</li>
-										<li>
-											<a id="aboutme" href="about-me.html" title="">About Me</a>
-										</li>
-										
 										<li>
 											<a id="commingsoon" href="comming-soon.html" target="_blank" title="">Comming Soon</a>
 										</li>
@@ -189,16 +190,109 @@
 		<section id="main-shop" class="minimals">
 			<div class="container wrap-product">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="sort-product">
-							<ul class="tab-product-list center">
-								<li class="active">All products</li>
-								<li>Comming soon</li>
-								<li>Sales Products</li>
-							</ul>
-						</div><!-- /.sort-product -->
-					</div><!-- /.col-md-12 -->
-				</div><!-- /.row -->
+				<div class="col-md-12">	
+			<div class="sort-product">
+					<ul class="tab-product-list center">
+						<li class="active">All products</li>
+						<li>Comming soon</li>
+						<li>Sales Products</li>
+						<div class="filter float-right">
+						Filters <i class="fa fa-angle-down" aria-hidden="true"></i>
+					    </div>
+					</ul>
+					
+				</div><!-- /.sort-product -->
+				<div class="box-filter shop">
+					<div class="hide">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+					<div class="widget widget-sort-by">
+						<div class="widget-title">
+							<h4>Tokens</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="token1.html" title="">Desarrollo inmobiliario</a>
+							</li>
+							<li>
+								<a href="token2.html" title="">Datacenter</a>
+							</li>
+							<li>
+								<a href="token3.html" title="">Ganaderia</a>
+							</li>
+							<li>
+								<a href="token4.html" title="">Uniqque gold</a>
+							</li>
+							<!-- <li>
+								<a href="#" title="">Price: low to high</a>
+							</li>
+							<li>
+								<a href="#" title="">Price: high to low</a>
+							</li> -->
+						</ul>
+					</div><!-- /.widget widget-sort-by -->
+					<div class="widget widget-price">
+						<!-- <div class="widget-title">
+							<h4>Price</h4>
+						</div>
+						<ul class="price-list">
+							<li>
+								<a href="#" title="">$0.00 - $50.00</a>
+							</li>
+							<li>
+								<a href="#" title="">$50.00 - $100.00</a>
+							</li>
+							<li>
+								<a href="#" title="">$100.00 - $150.00</a>
+							</li>
+							<li>
+								<a href="#" title="">$150.00 - $200.00</a>
+							</li>
+							<li>
+								<a href="#" title="">$200.00 - 250.00</a>
+							</li>
+							<li>
+								<a href="#" title="">250.00+</a>
+							</li>
+						</ul> -->
+					</div><!-- /.widget widget-price -->
+					
+					
+					<div class="widget widget-tags">
+						<!-- <div class="widget-title">
+							<h4>Tags</h4>
+						</div>
+						<ul class="tags-list">
+							<li>
+								<a href="#" title="">All products</a>
+							</li>
+							<li>
+								<a href="#" title="">Bags</a>
+							</li>
+							<li>
+								<a href="#" title="">Decoration</a>
+							</li>
+							<li>
+								<a href="#" title="">Fashion</a>
+							</li>
+							<li>
+								<a href="#" title="">Chair</a>
+							</li>
+							<li>
+								<a href="#" title="">Chair</a>
+							</li>
+							<li>
+								<a href="#" title="">Furniture</a>
+							</li>
+							<li>
+								<a href="#" title="">Accesories</a>
+							</li>
+						</ul> -->
+					</div><!-- /.widget widget-tags -->
+				</div><!-- /.box-filter shop -->
+			</div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
+	
 
 				<!-- ALL PRODUCTS -->
 
@@ -214,9 +308,9 @@
 									</div>
 								</div><!-- /.imagebox-header -->
 								<div class="imagebox-content center">
-									<div class="texto-shop">token uniqque gold</div>
+									<div class="texto-shop">Proyecto de desarrollo inmobiliario</div>
 									<div class="name">
-										<a href="#" title="">proyecto uniqque</a>
+										<a href="#" title="">Desarrollo inmobiliario</a>
 									</div>
 									<!-- <div class="price">
 										$50.99
@@ -228,13 +322,13 @@
 							<div class="imagebox style1">
 								<div class="imagebox-header">
 									<span class="hot">Comming soon</span>
-									<img class="shop-images" src="images/shop/datacenters_small.jpg" alt="">
+									<img class="shop-images" src="images/shop/datacenter.jpg" alt="">
 									<div class="add-cart">
 										<a href="token2.html" class="shop-cart" title=""><span class="icon_cart_alt"></span></a>
 									</div>
 								</div><!-- /.imagebox-header -->
 								<div class="imagebox-content center">
-									<div class="texto-shop">Lorem ipsum dolor sit amet consectetur adipisicing elitis impedit tur magni</div>
+									<div class="texto-shop">Datacenter de mineria</div>
 									<div class="name">
 										<a href="#" title="">Datacenter</a>
 									</div>
@@ -254,7 +348,7 @@
 									</div>
 								</div><!-- /.imagebox-header -->
 								<div class="imagebox-content center">
-									<div class="texto-shop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, est, nam omnis impedit commodi consequuntur magni</div>
+									<div class="texto-shop">Proyecto de ganaderia</div>
 									<div class="name">
 										<a href="#" title="">Ganaderia</a>
 									</div>
@@ -264,6 +358,27 @@
 								</div><!-- /.imagebox-content -->
 							</div><!-- /.imagebox style1 -->
 						</div><!-- /.col-lg-3 col-md-4 col-sm-6 -->
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="imagebox style1">
+								<div class="imagebox-header">
+									<span class="hot">Comming soon</span>
+									<img class="shop-images" src="images/shop/uniqque.png" alt="">
+									<div class="add-cart">
+										<a href="token4.html" class="shop-cart" title=""><span class="icon_cart_alt"></span></a>
+									</div>
+								</div><!-- /.imagebox-header -->
+								<div class="imagebox-content center">
+									<div class="texto-shop">Token uniqque gold</div>
+									<div class="name">
+										<a href="#" title="">Uniqque gold</a>
+									</div>
+									<!-- <div class="price">
+										$50.99
+									</div> -->
+								</div><!-- /.imagebox-content -->
+							</div><!-- /.imagebox style1 -->
+						</div><!-- /.col-lg-3 col-md-4 col-sm-6 -->
+						
 						
 			</div><!-- /.container -->
 		</section><!-- /#main-shop -->
@@ -291,67 +406,86 @@
 			</div>/.container 
 		</section>/.flat-actions -->
 
-		<footer class="style1">
-			<div class="footer-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="wrap-footer">
-								<div class="nav-footer float-left">
-									<ul class="mainnav-ft">
-										<li>
-											<a href="about-company.html" title="">About Us</a>
-										</li>
-										<li>
-											<a href="blog.html" title="">Blog</a>
-										</li>
-										<li>
-											<a href="faqs.html" title="">FAQs</a>
-										</li>
-										<li>
-											<a href="#" title="">Order Tracking</a>
-										</li>
-										<li>
-											<a href="contact-classic.html" title="">Contact</a>
-										</li>
-									</ul>
-								</div><!-- /.nav-footer -->
-								<div class="copyright float-left">
-									<i class="fa fa-copyright" aria-hidden="true"></i> Created by Leonard
-								</div><!-- /.copyright -->
-								<ul class="social-ft float-right">
-									<li>
-										<a href="" title="Facebook">
-											<i class="fa fa-facebook" aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a href="" title="Twitter">
-											<i class="fa fa-twitter" aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a href="" title="Google Plus">
-											<i class="fa fa-google-plus" aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a href="" title="Instagram">
-											<i class="fa fa-instagram" aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a href="" title="Pinterest">
-											<i class="fa fa-pinterest" aria-hidden="true"></i>
-										</a>
-									</li>
-								</ul><!-- /.social-ft -->
-							</div><!-- /.wrap-footer -->
-						</div><!-- /.col-md-12 -->
-					</div><!-- /.row -->
-				</div><!-- /.container -->
-			</div><!-- /.footer-menu -->
-		</footer>/.footer
+		<footer class="style2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="widget-about">
+							<div class="logo-ft">
+								<a href="index.html" title="">Tokensur</a>
+							</div>
+							<ul class="social-ft">
+								<li>
+									<a href="https://wa.me/+54 911 37996412" target="_blank">
+										<i class="fa-brands fa-whatsapp"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=100090417305686" title="Facebook" target="_blank">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/company/tokensur/" title="LinkedId" target="_blank"> 
+										<i class="fa-brands fa-linkedin-in"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/tokensur/" title="Instagram" target="_blank">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul><!-- /.social-ft -->
+						</div><!-- /.widget-about -->
+					</div><!-- /.col-md-4 -->
+					<div class="col-md-4">
+						<div class="widget-menu-ft">
+							<ul class="one-half">
+								<li>
+									<a href="index.html" target="_blank">Home</a>
+								</li>
+								<li>
+									<a href="about-company.html" target="_blank">About company</a>
+								</li>
+								<li>
+									<a href="plataforma.html" target="_blank">Platform</a>
+								</li>	
+								<li>
+									<a href="comming-soon.html" target="_blank">Comming soon</a>
+								</li>
+							</ul><!-- /.one-half -->
+							<ul class="one-half">
+								<li>
+									<a href="shop-minimals.html" target="_blank">Marketplace</a>
+								</li>
+								<li>
+									<a href="team-member.html" target="_blank">Team members</a>
+								</li>
+								<li>
+									<a href="contact-form.html" target="_blank">Contact form</a>
+								</li>
+								
+							</ul><!-- /.one-half -->
+						</div><!-- /.widget-menu-ft -->
+					</div><!-- /.col-md-4 -->
+					<div class="col-md-4">
+						<div class="widget-information">
+							<ul>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2148.783205169923!2d-58.86558111568095!3d-34.4512325167125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9de07203e295%3A0x225030d7c6aa960a!2sParque%20Empresarial%20Austral!5e0!3m2!1ses!2sar!4v1686059170460!5m2!1ses!2sar" width="350" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</ul>
+						</div><!-- /.widget-information -->
+					</div><!-- /.col-md-4 -->
+					<!-- <div class="info-contacto">
+							<ul>
+								<li>+54 911 37996412</li>
+								<li>hello@tokensur.com</li>
+								<li>Parque Austral, Pilar</li>
+							</ul>
+				    </div> -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</footer><!-- /.footer style2 -->
+		
 
 		<div class="button-go-top">
 			<a href="#" title="" class="go-top">
@@ -359,9 +493,10 @@
 			</a><!-- /.go-top -->
 		</div><!-- /.button-go-top -->
 
-	</div><!-- /.boxed -->
-
 		<!-- Javascript -->
+
+		<script src="./01-login/server.js"></script>
+		<script src="./01-login/public/js/app.js"></script>
 		<script type="text/javascript" src="javascript/jquery.min.js"></script>
 		<script type="text/javascript" src="javascript/tether.min.js"></script>
 		<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
